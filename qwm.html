@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+  figure{
+    width:600px;
+    height:600px;
+    border:10px solid #fff;
+    box-shadow:0px 0px 10px 0px #000;
+    overflow:hidden;
+    position:relative;
+  }
+    figure img{
+      transform:scale(1);
+    }
+    figure:hover img{
+      transform:scale(1.2);
+    }
+    figure figcaption{
+      position:absolute;
+      z-index:3;
+      left:0;
+      bottom:0;
+      height:30px;
+      width:100%;
+      color:rgba(0,60,0,0);
+      font-weight:bold;
+      background-color:rgba(255,255,255,.6);
+      text-align:center;
+      line-height:30px;
+      transition:color .5s,background-color 1s;
+    }
+    figure:hover figcaption{
+      color:rgba(0,0,255,.9);
+      background-color:rgba(255,255,255,.6);
+    }
+  </style>
+</head>
+<body>
+  <figure>
+    <figcaption>庆哥真帅</figcaption>
+  <img src="http://imgsrc.baidu.com/forum/w%3D580/sign=110b4a0736a85edffa8cfe2b795509d8/f28a87d6277f9e2faa323e5f1d30e924b899f367.jpg" alt="">
+  </figure>
+</body>
+</html>
